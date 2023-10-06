@@ -262,7 +262,7 @@ button {
 
 .adv-title-section{
     /* width: calc((100% - 72px) / 4); */
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
 }
 
 .advantages-title{
@@ -314,8 +314,6 @@ button {
 
 .team{
     background-color: var(--c-background-light);
-    /* width: calc((100% - 72px) / 4); */
-    flex-basis: 100%;
     width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -853,21 +851,64 @@ letter-spacing: 0.02em
     }
         
 }
-
+@media only screen and (min-width:320px) and( max-width:767.98px){
+    .adv-title-section .team {
+        flex-basis: 100%;
+    }
+}
 
 /*tablet*/
 @media only screen and (min-width:768px) {
-    .container{
+    .container {
         max-width: 736px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
 
     .menu-tooggle{
         display: none;
     }
-}
-@media only screen and (min-width:768px){
+
+    .logo {
+        margin-right: 0;
+    }
+    .navigation-list{
+        gap: 120px;
+    }
+
+    .navigation-adress{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero{
+        padding: 112px 0;
+    }
+    .hero-text{
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+    .advantages-section{
+        padding: 96px 0;
+    }
+    .adv-title-section{
+        width: calc((100% - 24px) / 2);
+    }
+    .advantages-list{
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .advantages-title{
+        text-align: left;
+    }
+    .team{
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list{
+        width: 552px;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
     .hero{
         background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(/images/hero/hero-tab.jpg);
     }
@@ -892,6 +933,38 @@ letter-spacing: 0.02em
     .container{
         max-width: 1126px;
     }
+    .navigation-adress{
+        flex-direction: inherit;
+        gap: 40px;
+    }
+
+    .hero-text{
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
+    .hero{
+        padding: 188px 0;
+    }
+
+    .adv-title-section{
+        width: calc((100% - 72px) / 4);
+    }
+    
+    .advantages-title{
+         font-weight: 500; 
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    .team-list{
+        width: 1128px;
+    }
+    .team{
+         width: calc((100% - 72px) / 4);
+    }
+    .team-section{
+        padding: 120px 0;
+    }  
 }
 
 @media only screen and (min-width:1158px){
